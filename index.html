@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>김민찬 포트폴리오</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            background-color: #000;
+            color: #fff;
+            padding: 30px 20px;
+            border-radius: 8px 8px 0 0;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1em;
+        }
+        section {
+            margin-bottom: 60px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        section:nth-of-type(1) {
+            animation-delay: 0.2s;
+        }
+        section:nth-of-type(2) {
+            animation-delay: 0.4s;
+        }
+        section:nth-of-type(3) {
+            animation-delay: 0.6s;
+        }
+        section:nth-of-type(4) {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            color: #222;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        .project {
+            margin-bottom: 16px;
+        }
+        .project-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .project-description {
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>김민찬</h1>
+            <p>컴퓨터소프트웨어공학과 학생 | 개발자 지망생</p>
+        </header>
+
+        <section>
+            <h2>소개</h2>
+            <p>
+                안녕하세요, 저는 동양미래대학교 컴퓨터소프트웨어공학과에 재학 중인 김민찬(2006년생)입니다.
+                웹 개발과 프로그래밍에 큰 흥미를 가지고 있으며, HTML/CSS와 Python, GitHub를 활용한 프로젝트 경험이 있습니다.
+                지속적인 학습과 협업을 통해 IT 분야에서 성장하고 싶습니다.
+            </p>
+        </section>
+
+        <section>
+            <h2>기술 역량</h2>
+            <ul>
+                <li>HTML / CSS 기반 웹 페이지 제작</li>
+                <li>Python 프로그래밍</li>
+                <li>GitHub를 활용한 버전 관리 및 협업 경험</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>프로젝트</h2>
+            <div class="project">
+                <div class="project-title">포트폴리오 웹 페이지 제작</div>
+                <div class="project-description">
+                    HTML/CSS를 활용하여 개인 포트폴리오 웹 페이지 제작.<br>
+                    반응형 레이아웃 적용 및 애니메이션 효과 구현.
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">Python 기반 데이터 분석 자동화 도구</div>
+                <div class="project-description">
+                    Python과 Pandas 라이브러리를 활용하여 CSV 데이터 자동 분석 및 리포트 생성 스크립트 개발.<br>
+                    GitHub에 오픈소스로 공유.
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>연락처</h2>
+            <p>이메일: catshewnuts@dongyang.ac.kr</p>
+            <p>전화번호: 010-1234-5678</p>
+            <p>GitHub: <a href="https://github.com/username" target="_blank">https://github.com/username</a></p>
+        </section>
+
+        <footer>
+            &copy; 2025 김민찬. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
